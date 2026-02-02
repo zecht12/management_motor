@@ -65,6 +65,11 @@ Agar aplikasi dapat berjalan lancar antara HP Android dan Laptop/Server, ikuti l
     php artisan serve --host=0.0.0.0 --port=8000
     ```
 
+6. **Cara tahu database jalan lancar dengan:**
+    ```bash
+    curl -X POST http://localhost:8000/api/register -H "Content-Type: application/json" -H "Accept: application/json" -d '{"nama": "Admin Motor", "email": "admin@test.com", "password": "password123"}'
+    ```
+
 ---
 
 ### Bagian 2: Persiapan Frontend (Flutter)
